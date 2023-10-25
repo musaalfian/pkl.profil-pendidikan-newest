@@ -1,0 +1,456 @@
+.main__section {
+  min-height: 100vh;
+}
+footer {
+  position: sticky;
+  top: 100%;
+}
+.fw700 {
+  font-weight: 700 !important;
+}
+/* Toogle responsive */
+#nav-toogle {
+  display: none;
+}
+#nav-toogle:checked + .sidebar__section {
+  width: 0px;
+  transition: .3s;
+}
+#nav-toogle:checked + .sidebar__section .sidebar__menu .menu__content path,
+#nav-toogle:checked + .sidebar__section .sidebar__menu .menu__content i,
+#nav-toogle:checked + .sidebar__section .sidebar__menu .menu__content span {
+  display: none;
+}
+#nav-toogle:checked ~ .main__section {
+  margin-left: 0;
+}
+#nav-toogle:checked ~ .main__section .header {
+  width: 100%;
+  left: 0;
+}
+#nav-toogle:checked ~ .main__section .header .kosong {
+  width: 0;
+}
+/* End toogle responsive */
+
+/* Sidebar */
+.sidebar__section {
+  width: 345px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  background-color: var(--dark-blue);
+  transition: width 300ms;
+}
+.sidebar__brand {
+  height: 6rem;
+  box-sizing: border-box;
+  border-bottom: 3px solid white;
+}
+
+.sidebar__menu .menu__content  button  {
+  color: black;
+}
+.sidebar__section .sidebar__brand i {
+  color: white !important;
+  font-size: 1.5rem;
+}
+.me__icon {
+  margin-left: .7rem ;
+}
+.menu__content {
+  margin-top: 20px;
+  margin-left:20%;
+  margin-right:20%;
+  padding: 7px 10px;
+}
+.menu__content button {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  color: white;
+  font-family: var(--head-font);
+}
+#navAdmin path {
+  color: white;
+}
+
+/* Dropdown data sekolah */
+.dropdown__section .dropdown__content {
+  right: 147.5px !important;
+  left: auto !important;
+}
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+.menu__content:hover .dropdown__section i {
+  color: black !important;
+}
+/* End sidebar */
+
+/* Main section */
+.main__section {
+  background-color: var(--light);
+  min-height: 100vh;
+}
+.main__section {
+  margin-left: 345px;
+  transition: margin-left 300ms;
+}
+.main__section .header {
+  position: fixed;
+  left: 345px;
+  width: calc(100% - 345px);
+  top: 0;
+  z-index: 10;
+  transition: width 300ms;
+}
+.main__section .header .kosong {
+  width: 22%;
+  transition: width 300ms;
+}
+/* .main__section img {
+  color: white;
+} */
+.main__section .header {
+  height: 5.9rem;
+  box-sizing: border-box;
+  border-left: 3px solid white;
+  transition: left 300ms;
+}
+.main__content {
+  margin-top: 5.9rem;
+}
+.menu__content a i {
+  font-style: normal;
+  font-size: 18px;
+  width: 18px !important;
+}
+.menu__content:hover {
+  background-color: white;
+}
+.menu__content:hover a i{
+  color: black !important;
+}
+.menu__content:hover span{
+  color: black !important;
+}
+/* End main section */
+
+/* Dashboard section */
+.dashboard__section .dashboard__content {
+  -webkit-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.2); 
+  box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.05);
+}
+.sd__section .tabel__section {
+  -webkit-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.2); 
+  box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.05);
+}
+
+/* Sd section */
+.sd__section {
+  background-color: white;
+}
+.sd__section tbody {
+  border-top: none !important;
+}
+.sd__section thead {
+  border-bottom: 1px solid var(--dark-blue);
+}
+.sd__section .nama__sekolah {
+  width: 40% !important;
+}
+.tabel__section__admin {
+  box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 5%);
+}
+.tabel__section__admin th {
+  color: var(--grey) !important;
+  font-weight: 600 !important;
+}
+.tabel__section__admin .nomor {
+  width: 0 !important;
+}
+.tabel__section__admin td {
+  padding: 10px 18px !important;
+}
+.tabel__section .nama__pengirim {
+  width: 18% !important;
+}
+.tabel__section__index {
+  box-shadow: 0px 5px 25px 0px rgb(0 0 0 / 5%);
+}
+.tabel__section__index th {
+  color: var(--grey) !important;
+  font-weight: 600 !important;
+}
+#dataSekolahSd_paginate .paginate_button:hover,
+#dataTenagaPendidikSd_paginate .paginate_button:hover, 
+#dataSekolahSmp_paginate .paginate_button:hover, 
+#dataTenagaPendidikSmp_paginate .paginate_button:hover,
+#strukturOrganisasi_paginate .paginate_button:hover,
+#kotakSaran_paginate .paginate_button:hover,
+#jabatan_paginate .paginate_button:hover {
+  color: var(--grey) !important;
+  background: none;
+}
+
+/* Tenaga sd section */
+.tenaga__pendidik__section {
+  -webkit-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.2); 
+  box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.05);
+  min-height: 100%;
+}
+.tenaga__pendidik__section .ms__laki {
+  margin-left: 2.4rem;
+}
+/* Donut chart */
+.chartBox {
+  margin: auto;
+  width: 230px;
+}
+.kotak__merah {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 99, 132);
+}
+.kotak__biru {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(54, 162, 235);
+}
+
+/* Footer */
+footer {
+  background-color: white !important;
+  -webkit-box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.2); 
+  box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.05);
+}
+
+
+/* *********************************** */
+/*              DATA SD                */
+/* *********************************** */
+.data__sd .dropdown-menu {
+  min-width: 12.8rem !important;
+}
+.mb20i {
+  margin-bottom: 20px !important;
+}
+.tabel__tenaga__pendidik th{
+  width: unset !important;
+}
+#dataSekolahSd_length select,
+#dataTenagaPendidikSd_length select,
+#dataSekolahSmp_length select,
+#dataTenagaPendidikSmp_length select,
+#strukturOrganisasi_length select,
+#jabatan_length select,
+#kotakSaran_length select {
+  margin: 0 8px;
+}
+/* *********************************** */
+/*          DETAIL SEKOLAH             */
+/* *********************************** */
+
+/* *********************************** */
+/*           EDIT SEKOLAH              */
+/* *********************************** */
+.edit__sekolah__section textarea {
+  min-height: 7.8rem;
+  border-radius: 0 !important;
+}
+.edit__sekolah__section label {
+  font-weight: 600 !important;
+  color: var(--grey);
+}
+.edit__sekolah__section input::placeholder{
+  color: lightslategray;
+}
+.edit__sekolah__section input, select {
+  color: black !important;
+}
+
+/* *********************************** */
+/*       EDIT TENAGA PENDIDIK          */
+/* *********************************** */
+.edit__sekolah__section option {
+  color: var(--grey) !important;
+}
+.sidebar__section .active path {
+  color: white;
+}
+.sidebar__section .menu__content:hover .active path {
+  color: black;
+}
+/* *********************************** */
+/*       STRUKTUR ORGANISASI           */
+/* *********************************** */
+.struktur__organisasi__section .nomor {
+  width: 0 !important;
+}
+.struktur__organisasi__section textarea {
+  min-height: 13.2rem;
+}
+.struktur__organisasi__section label {
+  font-weight: 600 !important;
+  color: var(--grey) !important;
+}
+
+/* *********************************** */
+/*              JABATAN                */
+/* *********************************** */
+.struktur__organisasi__section .nama__jabatan {
+  width: 32% !important;
+}
+.struktur__organisasi__section .aksi {
+  width: 10% !important;
+}
+
+/* *********************************** */
+/*          LOGIN SECTION              */
+/* *********************************** */
+.w65 {
+  width: 65%;
+}
+.kiri {
+  width: 50%;
+}
+.kanan {
+  width: 50%;
+  background-color: var(--dark-blue);
+  min-height: 100vh;
+}
+.indikator {
+  position: static;
+}
+.btn__indikator__kanan, .btn__indikator__kiri {
+  position: static;
+}
+.indikator__icon {
+  width: 1.5rem;
+}
+.login__section input::placeholder {
+  color: lightslategray;
+  font-size: 14px;
+}
+.eye i {
+  position: absolute;
+  right: 3%;
+  top: 7px;
+}
+
+/* Responsive */
+@media screen and (max-width: 2560px) {
+  .sidebar__section {
+    width: 300px;
+    transition: .3s;
+  }
+  .sidebar__menu .menu__content {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .sidebar__section .sidebar__menu .menu__content i {
+    display: inline;
+  }
+  .sidebar__section .sidebar__menu .menu__content span {
+    display: inline;
+  }
+  .main__section {
+    margin-left: 300px;
+  }
+  .main__section .header {
+    width: 100%;
+    left: 300px;
+  }
+  .sidebar__section .sidebar__brand i, .sidebar__section .sidebar__brand h3 {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .login__section {
+    justify-content: center;
+  }
+  .login__section .login__content {
+    width: 100%;
+  }
+  .login__section .kiri {
+    display: inline !important;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .login__section .login__content {
+    padding: 4rem 1.5rem;
+  }
+  .login__section .kanan {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sidebar__section {
+    width: 200px;
+    transition: .3s;
+  }
+  .sidebar__menu .menu__content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .sidebar__section .sidebar__menu .menu__content i {
+    display: inline;
+  }
+  .sidebar__section .sidebar__menu .menu__content span {
+    display: inline;
+  }
+  .main__section {
+    margin-left: 200px;
+  }
+  .main__section .header {
+    width: 100%;
+    left: 200px;
+  }
+  .sidebar__section .sidebar__brand i, .sidebar__section .sidebar__brand h3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar__section {
+    width: 200px;
+    transition: .3s;
+  }
+  .sidebar__menu .menu__content {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .sidebar__section .sidebar__menu .menu__content i {
+    display: inline;
+  }
+  .sidebar__section .sidebar__menu .menu__content span {
+    display: inline;
+  }
+  .main__section {
+    margin-left: 200px;
+  }
+  .main__section .header {
+    width: 100%;
+    left: 200px;
+  }
+  .sidebar__section .sidebar__brand i, .sidebar__section .sidebar__brand h3 {
+    display: none;
+  }
+  .main__section .header a {
+    display: none !important;
+  }
+}
+
+
+

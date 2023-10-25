@@ -1,0 +1,577 @@
+/* Variable */
+:root {
+    /* color */
+    --white: rgba(255, 255, 255, 1);
+    --light: #F8F8FA;
+    --dark-blue: rgba(41, 69, 106, 1);
+    --blue: rgba(38, 151, 255, 1);
+    --red: rgba(243, 110, 110, 1);
+    --grey: #444A5D;
+
+    /* font */
+    --head-font: "Segoe UI", sans-serif;
+    --body-font: "Montserrat", sans-serif;
+
+    /* box shadow */
+    --shadow-color: 0 0 0 2px lightgray !important;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.0);
+
+    /* transtitions */
+    --main-trans: all 0.4s ease-in-out
+}
+/* End variable */
+
+/* Main style */
+* {
+    font-family: var(--head-font);
+    font-weight: 400 !important;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+/* End main style */
+
+/* Color */
+.grey {
+    color: var(--grey);
+}
+.darkblue {
+    color: var(--dark-blue);
+}
+.blue {
+    color: var(--blue);
+}
+.red {
+    color: var(--red);
+}
+.lightlattegray {
+    color: lightslategray;
+} 
+/* End color */
+
+/* Background color */
+.bglight {
+    background-color: var(--light);
+}
+.bgwhite {
+    background-color: white;
+}
+.bggrey {
+    background-color: var(--grey);
+}
+.bgdarkblue {
+    background-color: var(--dark-blue);
+}
+.bgblue {
+    background-color: var(--blue);
+}
+.bgred {
+    background-color: var(--red);
+}
+/* End background color */
+
+/* Font */
+.fw600 {
+    font-weight: 600 !important;
+}
+.ff1 {
+    font-family: var(--head-font);
+}
+.ff2 {
+    font-family: var(--body-font);
+}
+.fsbig {
+    font-size: 10rem !important;
+}
+.fs24 {
+    font-size: 24px;
+}
+.fs20 {
+    font-size: 20px !important;
+}
+.fs18 {
+    font-size: 18px !important;
+}
+.fs16 {
+    font-size: 16px !important;
+}
+.fs14 {
+    font-size: 14px !important;
+}
+.fs12 {
+    font-size: 12px !important;
+}
+h1 {
+    font-size: 32px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 12px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0 !important;
+}
+/* End font */
+
+/* Padding */
+.px {
+    padding: 40px 0;
+}
+.pt40 {
+    padding-top: 40px;
+}
+.pb40 {
+    padding-bottom: 40px;
+}
+.pt20 {
+    padding-top: 20px;
+}
+.pb20 {
+    padding-bottom: 20px;
+}
+/* End padding */
+
+/* Margin */
+.mb150 {
+    margin-bottom: 150px;
+}
+.mt40 {
+    margin-top: 40px;
+}
+.mt30 {
+    margin-top: 30px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mt15 {
+    margin-top: 15px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mb40 {
+    margin-bottom: 40px;
+}
+.mb30 {
+    margin-bottom: 30px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+.mb15 {
+    margin-bottom: 15px;
+}
+.mb10 {
+    margin-bottom: 10px !important;
+}
+/* End margin */
+
+/* Button */
+.button {
+    border-radius: 0;
+    border: none;
+}
+.button__transparan {
+    background-color: transparent !important;
+}
+/* End button */
+
+/* Border */
+.bd__radius__none {
+    border-radius: 0 !important;
+}
+.bdb {
+    border-bottom: 1px solid lightgray;
+}
+/* End border */
+
+
+/* Tabel */
+.dataTables_wrapper select, input {
+    border-radius: 0 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    border-radius: 0 !important;
+    border-color: lightslategray !important;
+    background: white !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    border-radius: 0 !important;
+}
+
+#userDataSekolahSd_paginate .paginate_button:hover,
+#userDataSekolahSmp_paginate .paginate_button:hover, 
+#userDataTenagaPendidikSmp_paginate .paginate_button:hover, 
+#userDataTenagaPendidikSd_paginate .paginate_button:hover, 
+#dataTenagaPendidikSdAll_paginate .paginate_button:hover,
+#dataTenagaPendidikSmpAll_paginate .paginate_button:hover
+{
+    color: var(--grey) !important;
+    background: none;
+}
+
+/* End main style */
+
+/* *********************************** */
+/*                INDEX                */
+/* *********************************** */
+/* Navbar */
+.navbar .navbar-brand h4 {
+    display: none;
+}
+.dropdown__section ul {
+    border-radius: 0 !important;
+}
+.dropdown__section ul li {
+    margin-left: 0;
+}
+.dropdown__section ul li a {
+    color: black;
+    text-align: right;
+}
+.navbar .dropdown__section ul li a:hover {
+    color: var(--dark-blue) !important;
+    text-decoration: underline;
+}
+.dropdown-menu[data-bs-popper] {
+    left: auto !important;
+    right: 0 !important;
+}
+.navbar-nav .dropdown-menu {
+    position: absolute !important;
+}
+.navbar-collapse a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.navbar-collapse ul li a:hover {
+    background-color: #fff;
+    color: black !important;
+}
+.active {
+    color: white !important;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../img/navbar-icon.svg') !important;
+}
+.navbar-light .navbar-toggler {
+    border-color: white !important;
+}
+/* End navbar */
+
+/* Carousel section */
+.carousel__section img {
+    object-fit: cover;
+    max-height: 500px;
+}
+/* End carousel section */
+
+/* Info section */
+.info__section h4 {
+    margin-bottom: 0 !important;
+}
+.info__section a:hover {
+    color: var(--blue) !important;
+    transition: .3s;
+}
+/* End info section */
+
+/* Data */
+.data__sekolah__section .bdx {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+/* End data */
+
+/* Footer */
+.footer__section h4, h5 {
+    line-height: 1.5rem;
+}
+.line {
+    width: 100%;
+    border: 1px solid white;
+}
+.line2 {
+    width: 100%;
+    border-bottom: 1px solid var(--dark-blue);
+
+}
+.footer__section .kotak__saran button:hover {
+    background-color: lightgray !important;
+}
+/* End footer */
+
+/* *********************************** */
+/*              TENTANG                */
+/* *********************************** */
+/* Tentang */
+.visi__section, .geografis__section h4 {
+    line-height: 1.5rem;
+}
+/* End tentang */
+
+/* Visi section */
+.visi__section .nomor {
+    min-width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+.visi__section .deskripsi h4 {
+    line-height: 1.5rem;
+}
+.line2 {
+    width: 100%;
+    height: 1.5px;
+    background-color: lightgray;
+}
+/* End visi section */
+
+/* Struktur organisasi */
+.organisasi__section .content {
+    padding: .7rem 1.5rem;
+    border: 0.5px solid lightgray;
+}
+.organisasi__section .deskripsi {
+    margin-left: 2.3rem;
+}
+.organisasi__section i {
+    transition: var(--main-trans);
+}
+.organisasi__content .content svg {
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-size: 16px;
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg);
+    
+}
+.organisasi__content.down .content svg {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+/* End struktur organisasi */
+
+/* *********************************** */
+/*           SEKOLAH DASAR             */
+/* *********************************** */
+/* Dropdown */
+.dropdown__section button {
+    border-radius: 0;
+    background-color: white !important;
+    color: var(--grey) !important;
+}
+.dropdown-menu {
+    min-width: 13.8rem !important;
+}
+.dropdown-toggle::after {
+    display: none !important;
+}
+/* End dropdown */
+
+/* Ajax tab */
+.ajax__section {
+    border-color: #6c757d !important;
+}
+.ajax__section .active {
+    border-color: #6c757d !important;
+    border-bottom: none !important;
+    color: var(--grey) !important;
+}
+.ajax__section button {
+    color: var(--blue);
+    border-radius: 0 !important;
+    /* border-color: #6c757d !important; */
+}
+/* End ajax tab */
+
+/* Tabel */
+#userDataSekolahSd_length select, #userDataSekolahSd_length select  {
+    margin: 0 8px;
+}
+.tabel__section {
+    border: 1px solid #6c757d;
+}
+.tabel__section th {
+    font-weight: 600 !important;
+}
+.tabel__section th, td {
+    font-size: 16px;
+    color: black;
+}
+.tabel__section .jabatan {
+    padding-right: 20rem;
+}
+.tabel__section th {
+    width: unset !important;
+}
+.tabel__section .nomor {
+    width: 0px !important; 
+}
+.tabel__section .akreditasi {
+    width: 80px !important;
+}
+.tabel__section td {
+    padding: 10px 18px !important;
+}
+/* End Tabel */
+
+/* *********************************** */
+/*     SEKOLAH MENENGAH PERTAMA        */
+/* *********************************** */
+
+/* *********************************** */
+/*           DETAIL SEKOLAH            */
+/* *********************************** */
+.detail__header path {
+    color: var(--dark-blue);
+}
+.detail__section .detail__content {
+    border-bottom: 1px solid lightgrey;
+}
+.detail__section .gambar {
+    max-width: 600px;
+    height: 100%;
+}
+.detail__section .gambar img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.detail__content .col-1 {
+    width: 0.333333% !important;
+}
+.sarpras__section, .siswa__section {
+    height: 409px;
+}
+.maintenance__content img {
+    width: 100px;
+    height: 100px;
+}
+.lokasi {
+    height: 400px;
+    max-width: 400px;
+}
+#map {
+    height: 100%;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+/* *********************************** */
+/*             KOTAK SARAN             */
+/* *********************************** */
+.saran__section input {
+    font-size: 14px;
+}
+.saran__section input[type=text] {
+    color: lightslategray;
+}
+.saran__section textarea {
+    border-radius: 0 !important;
+    min-height: 12.5rem;
+    color: lightslategray !important;
+}
+.saran__section .modal__pesan {
+    min-height: 5rem;
+}
+.captcha {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 0;
+    padding: 10px 10px;
+    text-decoration: line-through;
+    color: black;
+    background-color: lightblue;
+}
+.input input {
+    padding: 10px 10px;
+    border: 1px solid #ced4da;
+}
+.input input[type=text] {
+    color: lightslategray;
+}
+.input input:focus {
+    outline: none !important;
+    /* border: none !important; */
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+.captcha__content {
+    width: 40%;
+}
+.restart a {
+    text-decoration: none;
+} 
+.errmsg {
+    color: red;
+    font-size: 14px;
+    transition: 0.5s ease;
+}
+
+
+/* Responsive */
+/* Lg */
+@media screen and (min-width: 992px) {
+    .navbar-nav li {
+        margin-left: 3rem;
+    }
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .footer__section .brand h4 {
+        margin-bottom: 0;
+    }
+}
+
+/* Mobile */
+@media screen and (min-width: 576px) {
+    .navbar .navbar-brand h4 {
+        display: inline;
+    }
+    .data__sekolah__section {
+        margin-top: 40px;
+    }
+    .data__sekolah__section .content h1 {
+        font-size: 32px !important;
+    }
+    .data__sekolah__section .content h2 {
+        font-size: 24px !important;
+    }
+    .footer__section h4 {
+        font-size: 16px !important;
+    }
+    .info__section h4, a {
+        font-size: 16px !important;
+    }
+    .copyright h5 {
+        font-size: 14px !important;
+    }
+    footer {
+        margin-top: 40px;
+    }
+}
+/* End responsive */
